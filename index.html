@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator project</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .input input {
+    border: 2px solid palegoldenrod;
+    width: 272px;
+    outline: 0;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 65px);
+            grid-template-rows: repeat(5, 62px);
+            gap: 4px;
+        }
+
+        .item {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 60px;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .item4,.item8,.item12,.item16{
+            background-color: #6767d5;
+        }
+        .item20{
+            background-color: orange;
+        }
+        .item:hover{
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+
+    <div class="calculator">
+
+        <div class="input">
+            <input type="text">
+        </div>
+
+        <div class="container">
+            <div class="item1 item"><span>C</span></div>
+            <div class="item2 item">
+                <span>+/-</span>
+            </div>
+            <div class="item3 item">
+                <span>%</span>
+            </div>
+            <div class="item4 item">
+                <span class="color">/</span>
+            </div>
+            <div class="item5 item">
+                <span>7</span>
+            </div>
+            <div class="item6 item">
+                <span>8</span>
+            </div>
+            <div class="item7 item">
+                <span>9</span>
+            </div>
+            <div class="item8 item">
+                <span>~</span>
+            </div>
+            <div class="item9 item">
+                <span>4</span>
+            </div>
+            <div class="item10 item"
+            ><span>5</span>
+            </div>
+            <div class="item11 item"
+            ><span>6</span>
+            </div>
+            <div class="item12 item"
+            ><span>-</span>
+            </div>
+            <div class="item13 item"
+            ><span>1</span>
+            </div>
+            <div class="item14 item"
+            ><span>2</span>
+            </div>
+            <div class="item15 item"
+            ><span>3</span>
+            </div>
+            <div class="item16 item"
+            ><span>+</span>
+            </div>
+            <div class="item17 item"
+            ><span>0</span>
+            </div>
+            <div class="item18 item"
+            ><span>.</span>
+            </div>
+            <div class="item19 item"
+            ><span>DEL</span>
+            </div>
+            <div class="item20 item"
+            ><span >=</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
